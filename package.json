@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "install-all": "cd frontend && npm install",
-    "start": "cd frontend && npm start",
-    "dev": "cd frontend && npm start",
-    "dev:local": "concurrently \"node dev-server.js\" \"cd frontend && npm start\"",
+    "start": "npm run dev",
+    "dev": "concurrently \"node dev-server.js\" \"cd frontend && npm start\"",
+    "dev:frontend": "cd frontend && npm start",
     "dev:api": "node dev-server.js",
     "dev:vercel": "vercel dev",
     "build": "cd frontend && npm run build",
